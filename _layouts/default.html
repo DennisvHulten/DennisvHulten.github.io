@@ -14,13 +14,13 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            margin: 0; /* Remove default margin */
-            padding: 0; /* Remove default padding */
+            margin: 0;
+            padding: 0;
         }
         header {
             background: #004444;
             color: white;
-            padding: 10px 0; /* Adjust top and bottom padding */
+            padding: 10px 0;
             text-align: center;
         }
         header h1 a {
@@ -37,7 +37,7 @@
             margin: 0;
             display: flex;
             justify-content: center;
-            flex-wrap: wrap; /* Allow the items to wrap on smaller screens */
+            flex-wrap: wrap;
         }
         nav ul li {
             margin: 0 15px;
@@ -60,14 +60,14 @@
         .main-content {
             padding: 20px;
             display: flex;
-            justify-content: center; /* Center content horizontally */
-            box-sizing: border-box; /* Include padding and border in element's total width and height */
+            justify-content: center;
+            box-sizing: border-box;
         }
         .content-section {
-            max-width: 800px; /* Adjust as needed */
+            max-width: 800px;
             width: 100%;
             padding: 20px;
-            box-sizing: border-box; /* Include padding and border in element's total width and height */
+            box-sizing: border-box;
             text-align: left;
         }
         .footer {
@@ -78,27 +78,32 @@
 
         /* Media Queries */
         @media (min-width: 1200px) {
-            main-content {
-                justify-content: lef;
+            .main-content {
+                justify-content: flex-start;
                 padding-left: 300px;
             }
             nav ul {
-                justify-content: left;
+                justify-content: flex-start;
                 padding-left: 300px;
             }
         }
-        @media (max-width: 1024px) {
-            main-content {
-                justify-content: lef;
+        @media (max-width: 1199px) {
+            .main-content {
+                justify-content: flex-start;
                 padding-left: 300px;
             }
             nav ul {
-                justify-content: left;
+                justify-content: flex-start;
                 padding-left: 300px;
             }
         }
         @media (max-width: 768px) {
             nav ul {
+                justify-content: center;
+                padding-left: 0;
+            }
+            .main-content {
+                justify-content: center;
                 padding-left: 0;
             }
         }
