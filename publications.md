@@ -1,5 +1,5 @@
 ---
-layout: about
+layout: publications
 title: Publications
 ---
 ### Bsc Thesis
