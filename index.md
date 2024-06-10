@@ -3,9 +3,7 @@ layout: default
 title: Home
 ---
 # PhD candidate
-University of Auckland, New Zealand.
-
-[UoA profile](https://profiles.auckland.ac.nz/dvan216/about)
+School of Biological Sciences, University of Auckland, New Zealand. 
 
 ## About me
 I am a marine biologist currently part of the [reefscape genomics lab](https://www.reefscapegenomics.com) @ [The California Academy of Sciences](https://www.calacademy.org/).
