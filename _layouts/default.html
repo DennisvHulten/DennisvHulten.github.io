@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="{{ site.lang | default: "en-US" }}">
+<html lang="{{ site.lang | default: 'en-US' }}">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    
+
     {% seo %}
-    <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
+    <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
     <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
     <![endif]-->
@@ -20,7 +20,7 @@
         header {
             background: #004444;
             color: white;
-            padding: 0px 0; /* Adjust top and bottom padding */
+            padding: 10px 0; /* Adjust top and bottom padding */
             text-align: center;
         }
         header h1 a {
@@ -28,7 +28,12 @@
             text-decoration: none;
             padding-top: 20px;
             padding-left: 5px;
-            text-align: center;
+        }
+        nav {
+            background: #006666;
+            width: 100%;
+            display: flex;
+            justify-content: center;
         }
         nav ul {
             list-style-type: none;
@@ -36,7 +41,6 @@
             margin: 0;
             display: flex;
             justify-content: center;
-            background: #006666;
         }
         nav ul li {
             margin: 0 15px;
@@ -53,47 +57,42 @@
         .wrapper {
             width: 100%; 
             margin: 0;
-            padding: 0px;
+            padding: 0;
             background: white;
+        }
+        .main-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Center content horizontally */
+        }
+        .content-section {
+            max-width: 800px; /* Adjust as needed */
+            width: 100%;
+            padding: 20px;
+            text-align: left;
         }
         .footer {
             text-align: center;
             padding: 10px 0;
             background: #ddd;
         }
-        .content-section {
-            max-width: 800px; /* Adjust as needed */
-            margin-left: 0 auto; /* Center the content section horizontally */
-            padding-left: 0;
-            padding-top: 10px;
-            text-align: left;
-        }
-        .content-wrapper {
-            margin: 0; /* Remove margin */
-            text-align: left;
-        }
-
     </style>
 </head>
 <body>
     <div class="wrapper">
         <header>
-            <h1><a href="{{ "/" | absolute_url }}">{{ site.title | default: site.github.repository_name }}</a></h1>
-
+            <h1><a href="{{ '/' | absolute_url }}">{{ site.title | default: site.github.repository_name }}</a></h1>
             {% if site.logo %}
-                <img src="{{site.logo | relative_url}}" alt="Logo" />
+                <img src="{{ site.logo | relative_url }}" alt="Logo" />
             {% endif %}
-
             <p>{{ site.description | default: site.github.project_tagline }}</p>
             <p><a href="https://profiles.auckland.ac.nz/dvan216/about">UoA profile</a></p>
             {% if site.github.is_project_page %}
                 <p class="view"><a href="{{ site.github.repository_url }}">View the Project on GitHub <small>{{ site.github.repository_nwo }}</small></a></p>
             {% endif %}
-
             {% if site.github.is_user_page %}
                 <p class="view"><a href="{{ site.github.owner_url }}">GitHub Profile</a></p>
             {% endif %}
-
             {% if site.show_downloads %}
                 <ul class="downloads">
                     <li><a href="{{ site.github.zip_url }}">Download <strong>ZIP File</strong></a></li>
@@ -103,7 +102,6 @@
             {% endif %}
         </header>
 
-        <!-- Add navigation menu here -->
         <nav>
             <ul>
                 {% for item in site.navigation %}
@@ -111,12 +109,14 @@
                 {% endfor %}
             </ul>
         </nav>
-        <!-- End of navigation menu -->
-        <section class="content-section">
-            <div class="content-wrapper">
-                {{ content }}
-            </div>
-        </section>
+
+        <div class="main-content">
+            <section class="content-section">
+                <div class="content-wrapper">
+                    {{ content }}
+                </div>
+            </section>
+        </div>
 
         <footer>
             {% if site.github.is_project_page %}
@@ -125,6 +125,6 @@
             <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
         </footer>
     </div>
-    <script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script>
+    <script src="{{ '/assets/js/scale.fix.js' | relative_url }}"></script>
 </body>
 </html>
