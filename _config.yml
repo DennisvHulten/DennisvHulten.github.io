@@ -3,3 +3,14 @@ logo: example_image1.jpg
 description: PhD candidate at the University of Auckland. 
 #show_downloads = True
 theme: jekyll-theme-minimal
+
+# Navigation menu
+navigation:
+  - title: "Home"
+    url: "/"
+  - title: "Models"
+    url: "/models"
+  - title: "Blog"
+    url: "/blog"
+  - title: "Publications"
+    url: "/publications"
