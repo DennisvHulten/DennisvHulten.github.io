@@ -30,15 +30,18 @@
             padding-left: 5px;
             text-align: center;
         }
+        nav {
+            text-align: center; /* Center the navigation links */
+        }
         nav ul {
             list-style-type: none;
             padding: 0;
             margin: 0;
-            display: flex;
-            justify-content: left;
+            display: inline-block; /* Make the navigation links inline-block */
             background: #006666;
         }
         nav ul li {
+            display: inline-block; /* Display navigation items horizontally */
             margin: 0 15px;
         }
         nav ul li a {
@@ -63,7 +66,7 @@
         }
         .content-section {
             max-width: 800px; /* Adjust as needed */
-            margin-left: 0 auto; /* Center the content section horizontally */
+            margin: 0 auto; /* Center the content section horizontally */
             padding-left: 0;
             padding-top: 10px;
             text-align: left;
