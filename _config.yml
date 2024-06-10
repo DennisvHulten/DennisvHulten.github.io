@@ -8,8 +8,8 @@ theme: jekyll-theme-minimal
 navigation:
   - title: "Home"
     url: "/"
-  - title: "Models"
-    url: "/models"
+  - title: "About"
+    url: "/about"
   - title: "Blog"
     url: "/blog"
   - title: "Publications"
