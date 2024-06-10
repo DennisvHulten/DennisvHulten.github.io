@@ -26,17 +26,21 @@
         header h1 a {
             color: white;
             text-decoration: none;
+            padding-top: 20px;
+            padding-left: 5px;
         }
         nav {
             background: #006666;
             width: 100%;
+            display: flex;
+            justify-content: left;
         }
         nav ul {
             list-style-type: none;
             padding: 0;
             margin: 0;
             display: flex;
-            justify-content: center;
+            justify-content: flex-start;
             flex-wrap: wrap; /* Allow the items to wrap on smaller screens */
         }
         nav ul li {
@@ -60,7 +64,7 @@
         .main-content {
             padding: 20px;
             display: flex;
-            justify-content: center; /* Center content horizontally */
+            justify-content: flex-start; /* Align content to the left */
             box-sizing: border-box; /* Include padding and border in element's total width and height */
         }
         .content-section {
