@@ -1,6 +1,6 @@
 ---
 layout: default
-title: About me
+title: About
 ---
 # PhD candidate
 University of Auckland, New Zealand
