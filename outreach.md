@@ -11,3 +11,5 @@ My presentation will be part of session 2: "Coral reef structure and functioning
 # Media
 
 # Community involvement
+I am working with a passionate group of students to help organise a workshop on sustainability and environment for Green Jam 2024!
+Green jam will be held on August 19th at the Auckland city zoo.
