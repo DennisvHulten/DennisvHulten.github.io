@@ -9,6 +9,7 @@ I will give an oral presentation on the molecular ecology of monospecific stands
 My presentation will be part of session 2: "Coral reef structure and functioning"
 
 # Media
+-- no news yet--
 
 # Community involvement
 I am working with a passionate group of students to help organise a workshop on sustainability and environment for Green Jam 2024!
